@@ -39,5 +39,4 @@ The first parameter is the model name, and then following hyper-parameters.
 
 ## Hyper-parameters
 
-You can find the full hyper-parameter form in [Google Drive](https://drive.google.com/file/d/10ciYJ0gDT4pKFH-IgYMBGBKSjqcwpFcc/view?usp=sharing). \\
-You can fine the full tuning range in [Google Drive](https://drive.google.com/file/d/1OSvVtjzlccv_of69G1uiWC_Y8VJFPMY3/view?usp=sharing)
+You can find the full hyper-parameter form in [Google Drive](https://drive.google.com/file/d/10ciYJ0gDT4pKFH-IgYMBGBKSjqcwpFcc/view?usp=sharing). 
