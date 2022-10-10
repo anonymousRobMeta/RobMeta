@@ -6,13 +6,7 @@ layout: default
 
 ## 1 Abstract
 
-Meta-learning has been recognized as an effective remedy for solving the cold-start problem in the recommendation domain.
-Traditional models assume that the testing samples are always distributionally aligned with the training ones.
-However, in the cold start setting, we can only observe a small number of users and items, which, in practice, may fail to represent the newly arrived (testing) sample distributions, and thus lead to lowed recommendation performance.
-For alleviating this problem, in this paper, we propose a robust meta recommender framework to address the distribution shift problem. In specific, we argue that the distribution shift may exist on both of the user- and item-levels, and in order to remove them simultaneously, we design a novel distributionally robust model by hierarchically reweighing the training samples.
-Generally speaking, the sample weights are leveraged to tune the training distribution, and we minimize the worst-case loss by searching the weights on a unit ball, which is expected to improve the robustness of the learned model. Theoretically, we analyze the convergence rate and demonstrate the generalization capability of our framework.
-Empirically, we conduct extensive experiments based on different meta recommender models and real-world datasets to verify the generality and effectiveness of our framework.
-For benefiting the research community and promoting this direction, we have released our code at this page.
+Meta-learning has been recognized as an effective remedy for solving the cold-start problem in the recommendation domain. Traditional models assume that the testing samples are always distributionally aligned with the training ones. However, in the cold start setting, we can only observe a small number of users and items, which, in practice, may fail to represent the newly arrived (testing) sample distributions, and thus lead to lowed recommendation performance. For alleviating this problem, in this paper, we propose a robust meta recommender framework to address the distribution shift problem. In specific, we argue that the distribution shift may exist on both of the user- and item-levels, and in order to remove them simultaneously, we design a novel distributionally robust model by hierarchically reweighing the training samples. Generally speaking, the sample weights are leveraged to tune the training distribution, and we minimize the worst-case loss by searching the weights on a unit ball, which is expected to improve the robustness of the learned model. Theoretically, we analyze the convergence rate and demonstrate the generalization capability of our framework. Empirically, we conduct extensive experiments based on different meta recommender models and real-world datasets to verify the generality and effectiveness of our framework. For benefiting the research community and promoting this direction, we have released our code at this page.
 
 ## 2 Contributions
 
@@ -70,7 +64,7 @@ Choose a model (e.g. MeLU) to run with the following command.
     python run.py MeLU hiddenDim1 32 hiddenDim2 32 localLr 0.1 lr 0.1 gamma 0.99 batchSize 20 epoch 200 userNum 20000
 ```
 
-You can also use `quick_start.py` to running the project conveniently.
+You can also use `quick_start.py` to run the project conveniently.
 
 ```
     python quick_start.py
@@ -91,9 +85,9 @@ We tune hyper-parameters according to the following table.
 | ------------------- | ---------------------------------------------------- | ------------------- |
 | taskWeightLr | user weights lr | \{0.00001, 0.0001, 0.001, 0.005, 0.01, 0.05, 0.1\} |
 | sampleWeightLr | interaction weights lr | \{0.00001, 0.0001, 0.001, 0.005, 0.01, 0.05, 0.1\} |
-| localLr     | adapt lr | \{ 0.001, 0.01, 0.05, 0.1\} |
-| lr   | model lr |  \{ 0.001, 0.01, 0.05, 0.1\} |
-| batchSize | batch size |  \{ 20, 100, 200, 400\} |
+| localLr     | adapt lr | \{0.001, 0.01, 0.05, 0.1\} |
+| lr   | model lr |  \{0.001, 0.01, 0.05, 0.1\} |
+| batchSize | batch size |  \{20, 100, 200, 400\} |
 | gamma | learning rate decay | \{0.95, 0.97, 0.99\} |
 | hiddenDim1 | hidden layer1 dim | \{16, 32, 64, 128\} |
 | hiddenDim2 | hidden layer2 dim | \{16, 32, 64, 128\} |
