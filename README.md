@@ -63,4 +63,4 @@ We tune hyper-parameters according to the following table.
 | hiddenDim2 | hidden layer2 dim | \{16, 32, 64, 128\} |
 | indHiddenDim | index embedding dim | \{16, 32, 64, 128\} |
 
-As different base models have different hyper-paramerters to tune, you can view the details in corresponding model files.orresponding model files.
+As different base models have different hyper-paramerters to tune, you can view the details in corresponding model files.
