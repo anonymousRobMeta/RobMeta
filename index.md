@@ -4,34 +4,8 @@ layout: default
 
 ## Meta Recommendation with Robustness Improvement
 
-## 1 Abstract
 
-Meta learning has been recognized as an effective remedy for solving the cold-start problem in the recommendation domain. Existing models aim to learn how to generalize from the user behaviors in the training set to testing set. However, in the cold start settings, with only a small number of training samples, the testing distribution may easily deviate from the training one, which may invalidate the learned generalization patterns, and lower the recommendation performance. For alleviating this problem, in this paper, we propose a robust meta recommender framework to address the distribution shift problem. In specific, we argue that the distribution shift may exist on both the user- and interaction-levels, and in order to remove them simultaneously, we design a novel distributionally robust model by hierarchically reweighing the training samples. Different sample weights correspond to different training distributions, and we minimize the largest loss induced by the sample weights in a simplex, which essentially optimizes the upper bound of the testing loss. In addition, we analyze our framework on the convergence rates and generalization error bound to provide more theoretical insights. Empirically, we conduct extensive experiments based on different meta recommender models and real-world datasets to verify the generality and effectiveness of our framework. For benefiting the research community and promoting this direction, we have released our project at https://anonymousrobmeta.github.io/RobMeta/.
-
-## 2 Contributions
-
-In conclusion, the main contributions of this paper can be summarized as follows:
-
-- We propose to improve the robustness of meta recommender models for alleviating the distribution shift problem, which, to our knowledge, is the first time in the recommendation domain. 
-
-- To achieve the above idea, we design a hierarchical reweighing mechanism to remove the distribution shifts on the user- and interaction-level simultaneously.
-In addition, we provide theoretical foundations and insights for the proposed framework.
-
-- We conduct extensive experiments based on real-world datasets to demonstrate the effectiveness and generality of our framework, and for promoting this direction, we have released our project at https://anonymousrobmeta.github.io/RobMeta/.
-
-## 3 Dataset Overview
-
-| Dataset        | # User | # Item | # Interaction | Sparsity | Domain |
-| -------------- | ------ | ------ | ------------- | -------- | ------ |
-| MovieLens-100K | 943    | 1,682  | 100,000       | 93.70%   | Movies |
-| MovieLens-1M   | 6,040  | 3,883  | 1,000,000     | 95.74%   | Movies |
-| Anime          | 20,000 | 9,499  | 1,771,114     | 99.07%   | Animes |
-| Jester         | 24,983 | 100    | 1,082,498     | 56.67%   | Jokes  |
-| Steam          | 20,000 | 14,430 | 295,485       | 99.90%   | Games  |
-
-
-
-## 4 Quick Start
+## Quick Start
 
 ### Step 1: Download the project
 
